@@ -5,7 +5,6 @@
 #include <stdlib.h>
 #include <stdarg.h>
 
-
 /**
  * struct specifiers - Struct for format
  * @specifiers: Struct format
@@ -21,7 +20,9 @@ typedef struct specifiers
 /*prototypes*/
 int _printf(const char *format, ...);
 int get_function(char s, va_list args);
+
 int _putchar(char c);
+int doubled(int *num);
 
 /*Conversion specifiers*/
 int print_char(va_list args);
@@ -30,4 +31,4 @@ int print_digit(va_list args);
 int print_mod(va_list args);
 int print_rev_string(va_list args);
 
-#endif /*MAIN_H*/
+#endif /* MAIN_H */
