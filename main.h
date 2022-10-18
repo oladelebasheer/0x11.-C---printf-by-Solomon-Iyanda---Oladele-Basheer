@@ -23,6 +23,7 @@ int get_function(char s, va_list args);
 
 int _putchar(char c);
 int doubled(int *num);
+int _strlen(char *str);
 
 /*Conversion specifiers*/
 int print_char(va_list args);
