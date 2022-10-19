@@ -1,4 +1,3 @@
-
 #include "main.h"
 
 /**
@@ -18,7 +17,10 @@ int get_function(char con_spec, va_list args)
 	specifiers_t spec[] = {
 		{'c', print_char},
 		{'s', print_string},
-
+		{'%', print_mod},
+		{'d', print_digit},
+		{'i', print_digit},
+		{'r', print_rev_string},
 		{0, NULL}
 	};
 
