@@ -1,19 +1,17 @@
 #include "main.h"
-#include <unistd.h>
-
 /**
- * print_char - print char
+ * print_char - print char.
+ * @list: va_list.
  *
- * @args: argument.
- *
- * Return: count of chars.
+ * Return: 1
  */
-
-int print_char(va_list args)
+int print_char(va_list list)
 {
-	char c = va_arg(args, int);
+	int aux;
 
-	_putchar(c);
+	aux = va_arg(list, int);
+
+	_putchar(aux);
 
 	return (1);
 }
